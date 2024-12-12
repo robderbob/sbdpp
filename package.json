@@ -1,0 +1,48 @@
+{
+  "name": "sbdpp",
+  "description": "experiments testing the script-based dialog policy planning",
+  "version": "0.0.1",
+  "engines": {
+    "node": "20"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives --cache .",
+    "start": "nodemon -L index.js -e js,pug,css,html"
+  },
+  "author": "anonymous",
+  "dependencies": {
+    "@nestjs/config": "^3.2.3",
+    "async-lock": "^1.2.2",
+    "axios": "^0.21.1",
+    "basic-auth": "^2.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.4.1",
+    "crypto-random-string": "^3.0.1",
+    "csurf": "^1.10.0",
+    "dictionary-de": "^2.0.2",
+    "helmet": "^3.21.2",
+    "i": "^0.3.6",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.12",
+    "npm": "^6.13.1",
+    "openai": "^4.29.2",
+    "require-all": "^3.0.0",
+    "sib-api-v3-sdk": "^8.5.0",
+    "string-similarity": "^3.0.0",
+    "tsscmp": "^1.0.6",
+    "ua-parser-js": "^0.7.20",
+    "underscore": "^1.9.2",
+    "validator": "^13.11.0",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^2.0.12"
+  }
+}

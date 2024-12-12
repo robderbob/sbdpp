@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app:
+    image: node:20
+    container_name: app
+    env_file: .env
+    command: npm start
+    working_dir: /app
+    ports:
+      - "$PORT:$PORT"
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app
+  mongodb:
+    image: mongo:4.4
+    env_file: .env
+    restart: always
+    ports:
+      - 27017:27017
+volumes:
+  data_volume:

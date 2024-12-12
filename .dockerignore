@@ -1,0 +1,17 @@
+*
+!actions
+!backoffice
+!controller
+!dao
+!lib
+!mapper
+!migration
+!models
+!private
+!public
+!service
+!views
+!index.js
+!healthcheck.js
+!package.json
+!package-lock.json
